@@ -3,6 +3,5 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-data/*.pkl
 data/*.csv
 .streamlit/secrets.toml

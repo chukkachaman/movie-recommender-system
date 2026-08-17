@@ -51,7 +51,7 @@ def main():
 
     cv = CountVectorizer(max_features=5000, stop_words="english")
     vectors = cv.fit_transform(df["tags"]).toarray()
-    similarity = cosine_similarity(vectors)
+    similarity = cosine_similarity(vectors).astype("float32")
 
     with open(os.path.join(DATA_DIR, "movies.pkl"), "wb") as f:
         pickle.dump(movies, f)

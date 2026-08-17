@@ -2,8 +2,7 @@
 
 A content-based movie recommender built with Python, scikit-learn, and Streamlit.
 Pick a movie you like and get similar picks based on plot overview, genres,
-keywords, cast, and director — inspired by
-[entbappy/Movie-Recommender-System-Using-Machine-Learning](https://github.com/entbappy/Movie-Recommender-System-Using-Machine-Learning).
+keywords, cast, and director.
 
 ## How it works
 
@@ -47,7 +46,7 @@ streamlit run app.py
 ├── src/
 │   ├── fetch_data.py      # TMDB data collection
 │   └── build_model.py     # tag vectorization + similarity matrix
-├── data/                  # generated CSV/pickle files (gitignored)
+├── data/                  # dataset + model artifacts (raw CSV gitignored)
 ├── .streamlit/config.toml # dark theme config
 └── requirements.txt
 ```
